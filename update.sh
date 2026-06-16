@@ -2,7 +2,7 @@
 export PATH="/opt/homebrew/bin:/usr/bin:/bin:$PATH"
 set -e
 cd "$HOME/Desktop/firestarter-port"
-python3 dashboard.py >/dev/null 2>&1
+python3 dashboard.py >/dev/null
 cp reports/dashboard-public.html "$HOME/fs-site/index.html"   # PUBLIC (money-free) only
 cd "$HOME/fs-site"
 git add -A
