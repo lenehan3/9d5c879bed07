@@ -1,7 +1,7 @@
 #!/bin/bash
 export PATH="/opt/homebrew/bin:/usr/bin:/bin:$PATH"
 set -e
-cd "$HOME/Desktop/firestarter-port"
+cd "$HOME/firestarter-port"
 python3 dashboard.py >/dev/null
 cp reports/dashboard-public.html "$HOME/fs-site/index.html"   # PUBLIC (money-free) only
 cd "$HOME/fs-site"
